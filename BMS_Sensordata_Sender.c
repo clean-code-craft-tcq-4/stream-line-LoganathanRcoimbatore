@@ -19,7 +19,7 @@ void DisplaySenderData(status *ptr_Status, BatteryParameters BatteryParam){
 status SendBatteryParameters(void){
 	BatteryParameters BatteryParam;
 	status operationStatus = NOT_OK;
-	generateSenderData(&BatteryParam);
+	GenerateSenderData(&BatteryParam);
 	DisplaySenderData(&operationStatus, BatteryParam);
 	return operationStatus;
 }
